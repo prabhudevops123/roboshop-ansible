@@ -8,8 +8,8 @@
 
 - name: Install NodeJS
   ansible.builtin.yum:
-   name: nodejs
-  state: installed
+    name: nodejs
+    state: installed
 
 - name: App Pre-Requisites
   ansible.builtin.import_tasks:
@@ -17,16 +17,17 @@
 
  - name: Install NodeJS Dependencies
    community.general.npm:
-     path: /app
+      path: /app
 
  - name: Schema Setup
    ansible.builtin.import_tasks:
-     file: schema-setup.yml
+      file: schema-setup.yml
     when: schema_type is defined
 
 # - name: SystemD Setup
 #   ansible.builtin.import_tasks:
 #     file: systemd-setup.yml
+
 
 
 
