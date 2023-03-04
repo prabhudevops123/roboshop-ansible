@@ -15,10 +15,10 @@
    community.general.npm:
       path: /app
 
- - name: Schema Setup
-   ansible.builtin.import_tasks:
-      file: schema-setup.yml
-    when: schema_type is defined
+# - name: Schema Setup
+#   ansible.builtin.import_tasks:
+#      file: schema-setup.yml
+#    when: schema_type is defined
 
 # - name: SystemD Setup
 #   ansible.builtin.import_tasks:
