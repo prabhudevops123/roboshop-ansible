@@ -1,6 +1,6 @@
 ## Service
 
-node_systemd_unit_state{exported_name="cart.service", state="active"}
+    node_systemd_unit_state{exported_name="cart.service", state="active"}
 
 ## CPU
 
